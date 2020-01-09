@@ -75,6 +75,14 @@ h1 {
     letter-spacing: 2px; }
     .header__link:hover {
       color: #9fadc2; }
+    .header__link:hover::after {
+      content: "";
+      position: absolute;
+      width: 111px;
+      height: 1px;
+      top: 25px;
+      left: 2px;
+      background: #fff; }
   .header__title {
     position: relative;
     color: #fff;
@@ -204,6 +212,11 @@ h1 {
             box-sizing: border-box;
     border-radius: 8px;
     padding: 21px 65px; }
+    .gallery__view_all_btn:hover {
+      background: #0075ff;
+      color: #fff;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
 
 .heading__crown {
   background: url("../images/crown.svg");
@@ -267,6 +280,12 @@ h1 {
     height: 56px;
     color: #fff;
     border: none; }
+    .form__button:hover {
+      background: #fff;
+      color: #0075ff;
+      border: 2px solid #0075ff;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
 
 @font-face {
   font-family: "Roboto";
@@ -407,11 +426,21 @@ a {
 .section {
   margin-top: 152px; }
 
+.button {
+  cursor: pointer; }
+
 @media screen and (min-width: 501px) and (max-width: 1260px) {
   .main {
     width: calc(100% - 80px); }
   .header__nav .nav__list {
-    margin-right: 60px; } }
+    margin-right: 60px; }
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media screen and (max-width: 1000px) {
   .testimonials {
