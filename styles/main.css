@@ -20,9 +20,9 @@ h1 {
   background-size: cover;
   font-weight: 400;
   line-height: 1; }
-  .header__phone {
+  .header__phone_number {
     color: #fff; }
-  .header__action input {
+  .header__action_input {
     display: none; }
   .header .menu_collapsed_contacts {
     display: none;
@@ -208,6 +208,8 @@ h1 {
     color: #0075ff;
     background: #fff;
     border: 2px solid #0075ff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 8px;
@@ -264,10 +266,11 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .form__input, .form__button {
+  .form__input {
     width: 100%; }
   .form__button {
     background: #0075ff;
+    border: 2px solid #0075ff;
     -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
             box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
     border-radius: 8px;
@@ -278,11 +281,11 @@ h1 {
     font-size: 16px;
     line-height: 14px;
     color: #fff;
-    border: none; }
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
     .form__button:hover {
       background: #fff;
       color: #0075ff;
-      border: 2px solid #0075ff;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
 
@@ -470,6 +473,8 @@ a {
       background: url("../images/phone.png") no-repeat;
       width: 18px;
       height: 18px; }
+      .header__top .header__phone_number {
+        display: none; }
       .header__top .header__phone.background-none {
         background: none; }
       .header__top .header__phone span {
